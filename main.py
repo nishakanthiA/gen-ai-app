@@ -1,6 +1,6 @@
-def main():
-    """Main execution function."""
-    print("Hello, World!")
+import streamlit as st
 
-if __name__ == "__main__":
-    main()
+st.set_page_config(page_title="Main Hub", page_icon="🚀", initial_sidebar_state="expanded")
+
+st.title("Welcome to the Dashboard Hub")
+st.write("Select an app from the sidebar to get started.")
