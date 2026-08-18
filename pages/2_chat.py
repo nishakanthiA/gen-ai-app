@@ -65,7 +65,6 @@ def clear_chat_history():
 st.set_page_config(page_title="Doc Q&A Assistant", page_icon="📚")
 st.title("📚 Ask Questions from Document Store")
 st.success(f"Connected to Chroma DB (`{CHROMA_COLLECTION_NAME}`)")
-st.button("Clear Chat History", on_click=clear_chat_history)
 
 # Show summery of the document store
 summery = get_collection_summery(CHROMA_DB_PATH, CHROMA_COLLECTION_NAME)
@@ -119,3 +118,5 @@ if user_query := st.chat_input("Ask a question about your saved documents..."):
 
     # Save assistant response to session state
     st.session_state.messages.append({"role": "assistant", "content": answer})
+
+    st.button("Clear Chat History", on_click=clear_chat_history)

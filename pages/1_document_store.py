@@ -20,7 +20,6 @@ if uploaded_file is not None:
                 # 1. Load document
                 tmp_path, file_name, file_ext = get_temp_file_path(uploaded_file)
                 docs = load_document(tmp_path, file_ext)
-                st.markdown(file_name)
 
                 # 2. Save Document
                 save_document(docs, file_name, CHROMA_DB_PATH, CHROMA_COLLECTION_NAME)

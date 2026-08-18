@@ -102,3 +102,5 @@ if uploaded_image is not None:
                     st.session_state.image_chat_history.append({"role": "assistant", "content": response})
                 except Exception as e:
                     st.error(f"An error occurred: {str(e)}")
+
+    st.button("Clear Chat History", on_click=lambda: st.session_state.image_chat_history.clear())
