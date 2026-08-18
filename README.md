@@ -1,6 +1,6 @@
-# gen-ai-app
+# OmniRAG
 
-This project is a Streamlit-based Retrieval-Augmented Generation (RAG) application that allows users to interact with a
+OmniRAG is a Streamlit-based Retrieval-Augmented Generation (RAG) application that allows users to interact with a
 Chroma vector store for document-based question answering. The app connects to a persistent Chroma database, retrieves
 relevant document chunks, and uses OpenAI's GPT model to generate concise answers. Additionally, it includes features
 for document summarization and image description.
