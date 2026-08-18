@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+*.iml
+*.xml
+
+# chroma
+*.bin
+*.sqlite3
+
+*.idea
