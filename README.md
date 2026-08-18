@@ -40,8 +40,8 @@ for document summarization and image description.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/gen-ai-app.git
-   cd gen-ai-app
+   git clone https://github.com/your-username/omni-rag.git
+   cd omni-rag
 
 2. Install the required dependencies:
    ```bash
